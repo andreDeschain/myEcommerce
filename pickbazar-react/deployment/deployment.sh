@@ -1,10 +1,10 @@
 #! /bin/bash
 
 echo "Enter your server username (ex: ubuntu)"
-read username
+read alucano
 
 echo "Enter server ip address (ex: 11.111.111.11)"
-read ip_address
+read 192.168.194.105
 
 echo "########### connecting to server... ###########"
 echo "${username}"
