@@ -50,7 +50,7 @@ if(whichConfig == 1) {
     echo(chalk.blue('Settings Running For REST API'))
 
     await $`sudo echo 'server {
-        listen 80;
+        listen 49704;
 
         server_name ${domainName};
 
@@ -64,7 +64,7 @@ if(whichConfig == 1) {
 
            # For API
         location /api {
-            proxy_pass http://localhost:5000/api;
+            proxy_pass http://192.168.194.105:49703/api;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection 'upgrade';
@@ -74,7 +74,7 @@ if(whichConfig == 1) {
     
        # For FrontEnd -> REST
        location /{
-            proxy_pass http://localhost:3000;
+            proxy_pass http://192.168.194.105:49705;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection 'upgrade';
@@ -83,7 +83,7 @@ if(whichConfig == 1) {
         }
     
         location /admin{
-            proxy_pass http://localhost:3002/admin;
+            proxy_pass http://192.168.194.105:49706/admin;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection 'upgrade';
@@ -100,7 +100,7 @@ if(whichConfig == 1) {
     echo(chalk.blue('Settings For GraphQL API'))
 
     await $`sudo echo 'server {
-        listen 80;
+        listen 49704;
 
         server_name ${domainName};
 
