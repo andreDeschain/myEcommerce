@@ -1,7 +1,7 @@
 {
   "env": {
-    "NEXT_PUBLIC_REST_API_ENDPOINT": "https://mock.redq.io/api",
-    "NEXT_PUBLIC_SHOP_URL": "https://pickbazar-react-rest.vercel.app",
+    "NEXT_PUBLIC_REST_API_ENDPOINT": "https://192.168.194.105:49703",
+    "NEXT_PUBLIC_SHOP_URL": "https://192.168.194.105",
     "NEXT_PUBLIC_GOOGLE_MAP_API_KEY": "",
     "NEXT_PUBLIC_AUTH_TOKEN_KEY": "AUTH_CRED",
     "APPLICATION_MODE": "production",
@@ -21,8 +21,8 @@
   },
   "build": {
     "env": {
-      "NEXT_PUBLIC_REST_API_ENDPOINT": "https://mock.redq.io/api",
-      "NEXT_PUBLIC_SHOP_URL": "https://pickbazar-react-rest.vercel.app",
+      "NEXT_PUBLIC_REST_API_ENDPOINT": "https://192.168.194.105:49703",
+      "NEXT_PUBLIC_SHOP_URL": "https://192.168.194.105",
       "NEXT_PUBLIC_GOOGLE_MAP_API_KEY": "",
       "NEXT_PUBLIC_AUTH_TOKEN_KEY": "AUTH_CRED",
       "APPLICATION_MODE": "production",
